@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.24
+
+Name: libns3-netanim
+Description: ns-3 module ns3-netanim
+Version: 3.24
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.24-netanim-optimized
+Cflags: -I${includedir}
+Requires: libns3.24-internet-optimized libns3.24-mobility-optimized libns3.24-wimax-optimized libns3.24-wifi-optimized libns3.24-csma-optimized libns3.24-lte-optimized libns3.24-uan-optimized libns3.24-energy-optimized

@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.24
+
+Name: libns3-test
+Description: ns-3 module ns3-test
+Version: 3.24
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.24-test-optimized
+Cflags: -I${includedir}
+Requires: libns3.24-applications-optimized libns3.24-bridge-optimized libns3.24-config-store-optimized libns3.24-csma-optimized libns3.24-csma-layout-optimized libns3.24-dsr-optimized libns3.24-flow-monitor-optimized libns3.24-internet-optimized libns3.24-lr-wpan-optimized libns3.24-lte-optimized libns3.24-mesh-optimized libns3.24-mobility-optimized libns3.24-olsr-optimized libns3.24-point-to-point-optimized libns3.24-sixlowpan-optimized libns3.24-stats-optimized libns3.24-uan-optimized libns3.24-wifi-optimized
